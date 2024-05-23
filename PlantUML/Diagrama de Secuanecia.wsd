@@ -1,0 +1,12 @@
+@startuml secuencia
+
+Cliente -> Sistema: registrarCliente(tipoDocumento, documento, nombre, correo)
+Sistema -> ClienteDAO: save(cliente)
+ClienteDAO -> Database: insert(clienteData)
+Database --> ClienteDAO: insertSuccess
+ClienteDAO --> Sistema: saveSuccess
+Sistema --> Cliente: registroCompleto
+
+@enduml
+
+

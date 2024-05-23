@@ -1,0 +1,56 @@
+@startuml casos
+left to right direction
+:Cliente: as Cliente
+:Usuario: as Usuario
+
+rectangle Sistema {
+    Cliente --> (Registrar Cliente)
+    Cliente --> (Modificar Cliente)
+    Cliente --> (Eliminar Cliente)
+    Cliente --> (Consultar Cliente)
+    
+    Usuario --> (Crear Factura)
+    Usuario --> (Modificar Factura)
+    Usuario --> (Eliminar Factura)
+    Usuario --> (Consultar Factura)
+    
+    Usuario --> (Agregar Detalle)
+    Usuario --> (Modificar Detalle)
+    Usuario --> (Eliminar Detalle)
+    Usuario --> (Consultar Detalle)
+    
+    Usuario --> (Registrar Producto)
+    Usuario --> (Modificar Producto)
+    Usuario --> (Eliminar Producto)
+    Usuario --> (Consultar Producto)
+    
+    Usuario --> (Registrar Entrada)
+    Usuario --> (Registrar Salida)
+    Usuario --> (Modificar Inventario)
+    Usuario --> (Eliminar Inventario)
+    Usuario --> (Consultar Inventario)
+}
+
+Cliente -left-> (Registrar Cliente)
+Cliente -left-> (Modificar Cliente)
+Cliente -left-> (Eliminar Cliente)
+Cliente -left-> (Consultar Cliente)
+
+Usuario -right-> (Crear Factura)
+Usuario -right-> (Modificar Factura)
+Usuario -right-> (Eliminar Factura)
+Usuario -right-> (Consultar Factura)
+Usuario -right-> (Agregar Detalle)
+Usuario -right-> (Modificar Detalle)
+Usuario -right-> (Eliminar Detalle)
+Usuario -right-> (Consultar Detalle)
+Usuario -right-> (Registrar Producto)
+Usuario -right-> (Modificar Producto)
+Usuario -right-> (Eliminar Producto)
+Usuario -right-> (Consultar Producto)
+Usuario -right-> (Registrar Entrada)
+Usuario -right-> (Registrar Salida)
+Usuario -right-> (Modificar Inventario)
+Usuario -right-> (Eliminar Inventario)
+Usuario -right-> (Consultar Inventario)
+@enduml
